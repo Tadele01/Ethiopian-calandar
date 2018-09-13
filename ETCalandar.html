@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/ETCalandar.css">
+  </head>
+  <body>
+    <form class="calanderInput">
+      <table>
+        <tr>
+          <td><label for="monthed"> ወር:</label>
+            <select id="monthed" name="month">
+
+            </select>
+          </td>
+
+          <td><label for="yeared">  አመት:</label>
+            <select id="yeared" name="year">
+
+            </select>
+          </td>
+
+
+          <td><button type="button" name="monthly" id="monthly" onclick="monthlyGenerator()">የወር መቁጠሪያ</button> </td>
+          <td><button type="button" name="yearly" id="yearly" onclick="yearlyGenerator()">የአመት መቁጠሪያ</button> </td>
+        </tr>
+        <tr>
+          <td colspan="4" id="yearDisplay"></td>
+        </tr>
+        <tr>
+          <td colspan="4" id="generateOn">
+            <span class="temporary">የሚፈልጉትን ሞልተው ያስጀምሩ</span>
+          </td>
+        </tr>
+      </table>
+
+    </form>
+
+    <script type="text/javascript" src="js/ETCalandar.js">    </script>
+  </body>
+</html>
